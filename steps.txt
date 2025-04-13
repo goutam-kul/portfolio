@@ -1,0 +1,15 @@
+1. Reset the browser defaults styles for most elements, then you don't have to configure
+each of them manually.
+2. Set up the text theme background color for body before moving to complex steps, get the 
+theme ready.
+4. Define you custom colors for each elements, like button, anchor tags, strong tags, etc. 
+Add colors for each elements (adding more to theme of the page).
+5. Define a utility css file, to keep the styles that are repeated.
+6. Create styles for the elements 
+7. Defined a container class for each section. Helps in creating dynamic sites using media port.
+8. Defined a section utility class to with just margin of 5 rem. This acts as gap between section.
+9. Defined 6 media queries - xs, sm, md, lg, xl, 2xl, 
+10. These media queries act as view port triggers, so when the size of the view port changes  
+the media query is triggered and the described css changes the property of the elements of the class.
+11. Divide the page into sections first define the sections of the overall web page. 
+12. Then complete each section separately. 
