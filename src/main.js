@@ -14,8 +14,16 @@ import mobileNav from './utils/mobile-nav';
 import darkMode from './utils/dark-mode';
 import lazyLoading from './utils/lazy-loading';
 import breakText from './utils/fliptext';
+import navAnimations from './utils/nav-animation';
+import heroAnimations from './utils/hero-animation';
+import aboutAnimations from './utils/about-animations';
+import featuredAnimations from './utils/featured-animations';
 
+navAnimations();
+heroAnimations();
 breakText();
+aboutAnimations();
+featuredAnimations();
 mobileNav();
 darkMode();
 lazyLoading();

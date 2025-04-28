@@ -25,9 +25,6 @@ function breakText() {
         clutter2 += `<span id="${letter}" class="line2" ${idx}">${letter}</span>`;
     })
 
-    console.log(clutter1)
-    console.log(clutter2)
-
     // Change the Html
     line1.innerHTML = clutter1
     line2.innerHTML = clutter2
