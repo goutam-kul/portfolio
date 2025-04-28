@@ -28,7 +28,20 @@
     font-size: var(--size-4xl);
     letter-spacing: -0.04em;
     line-height: 0.9;
+    overflow: hidden;
 }
+
+.hero__title-wrapper {
+    overflow: hidden;
+}
+
+.hero__title span {
+    display: inline-block;
+}
+
+/* .hero-title {
+
+} */
 
 .hero__description {
     max-width: 60ch;
@@ -47,25 +60,25 @@
     .hero {
         gap: 1.5rem;
     }
-    
+
     .hero__img {
         width: 6.5rem;
         height: 6.5rem;
     }
-    
+
     .hero__subtitle {
         font-size: var(--size-lg);
     }
-    
-    
+
+
     .hero__title {
         font-size: var(--size-5xl);
     }
-    
+
     .hero__description {
         font-size: var(--size-base);
     }
-    
+
     .hero__btn {
         font-size: var(--size-base);
     }
@@ -87,20 +100,20 @@
         width: 8rem;
         height: 8rem;
     }
-    
+
     .hero__subtitle {
         font-size: var(--size-2xl);
     }
-    
-    
+
+
     .hero__title {
         font-size: var(--size-7xl);
     }
-    
+
     .hero__description {
         font-size: var(--size-lg);
     }
-    
+
     .hero__btn {
         font-size: var(--size-lg);
     }
@@ -117,20 +130,20 @@
         width: 10rem;
         height: 10rem;
     }
-    
+
     .hero__subtitle {
         font-size: var(--size-4xl);
     }
-    
-    
+
+
     .hero__title {
         font-size: var(--size-9xl);
     }
-    
+
     .hero__description {
         font-size: var(--size-xl);
     }
-    
+
     .hero__btn {
         font-size: var(--size-xl);
     }

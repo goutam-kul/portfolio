@@ -46,10 +46,10 @@
 
 .about__list {
     font-size: var(--size-sm);
-    color: var(--clr-slate600);   
+    color: var(--clr-slate600);
 }
 
-.about__list::before{
+.about__list::before {
     content: ' ';
     margin-left: 0.5em;
 }
@@ -58,38 +58,52 @@
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    transition: box-shadow 1s, opacity 1s;
+    transition: all 0.3s ease;
+}
+
+
+.about__img-wrapper {
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+
+.about__img-wrapper:hover {
+    box-shadow: 0 10px 40px rgba(225, 29, 71, 0.521),
+        0px 2px 10px rgba(225, 29, 71, 0.521),
+        0 0 10px -10px var(--clr-rose);
 }
 
 .about__img:hover {
-    box-shadow: 0 10px 40px rgba(225, 29, 71, 0.521), 
-    0px 2px 10px rgba(225, 29, 71, 0.521), 
-    0 0 10px -10px var(--clr-rose);
     opacity: 0.8;
+    scale: 1.05;
 }
+
 
 /* xs */
 @media (min-width: 475px) {
     .about {
         gap: 1.5rem;
     }
-    
+
     .about__content {
         gap: 1.5rem;
     }
-    
+
     .about__title {
         font-size: var(--size-3xl);
     }
-    
+
     .about__description {
         font-size: var(--size-base);
     }
-    
+
     .about__subtitle {
         font-size: var(--size-base);
     }
-    
+
     .about__list {
         font-size: var(--size-base);
     }
@@ -123,15 +137,15 @@
     .about__title {
         font-size: var(--size-4xl);
     }
-    
+
     .about__description {
         font-size: var(--size-lg);
     }
-    
+
     .about__subtitle {
         font-size: var(--size-lg);
     }
-    
+
     .about__list {
         font-size: var(--size-lg);
     }
@@ -144,18 +158,19 @@
     .about__content {
         gap: 2rem;
     }
+
     .about__title {
         font-size: var(--size-5xl);
     }
-    
+
     .about__description {
         font-size: var(--size-xl);
     }
-    
+
     .about__subtitle {
         font-size: var(--size-xl);
     }
-    
+
     .about__list {
         font-size: var(--size-xl);
     }
@@ -169,4 +184,3 @@
 /* @media (min-width: 1536px) {
 
 } */
-
