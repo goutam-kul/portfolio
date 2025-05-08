@@ -18,6 +18,7 @@ import navAnimations from './utils/nav-animation';
 import heroAnimations from './utils/hero-animation';
 import aboutAnimations from './utils/about-animations';
 import featuredAnimations from './utils/featured-animations';
+import contactAnimation from './utils/contact-animations';
 
 navAnimations();
 heroAnimations();
@@ -27,3 +28,15 @@ featuredAnimations();
 mobileNav();
 darkMode();
 lazyLoading();
+contactAnimation();
+
+var swiper = new Swiper(".swiper", {
+    effect: "cards",
+    grabCursor: true,
+
+    // Pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+});

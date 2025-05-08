@@ -6,6 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <title>Goutam's Portfolio</title>
 </head>
 
@@ -26,11 +27,14 @@
         <li>
           <button id="theme-toggle" class="header__moon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path fill-rule="evenodd"
                 d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z"
                 clip-rule="evenodd" />
             </svg>
-
           </button>
         </li>
         <li>
@@ -64,6 +68,10 @@
         <li class="mobile-nav__line"></li>
         <li>
           <button id="theme-toggle" class="mobile-nav__moon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z" />
+            </svg>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path fill-rule="evenodd"
                 d="M9.528 1.718a.75.75 0 0 1 .162.819A8.97 8.97 0 0 0 9 6a9 9 0 0 0 9 9 8.97 8.97 0 0 0 3.463-.69.75.75 0 0 1 .981.98 10.503 10.503 0 0 1-9.694 6.46c-5.799 0-10.5-4.7-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 0 1 .818.162Z"
@@ -176,7 +184,7 @@
           <p class="featured__info">March 2025</p>
         </div>
       </div>
-      <div class="featured__img-container">
+      <!-- <div class="featured__img-container">
         <div class="featured__img-wrapper">
           <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="teach_assistant_home.png" alt="">
         </div>
@@ -196,13 +204,38 @@
         </div>
         <div class="featured__img-wrapper">
           <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="teach_assistant_chat.png" alt="">
-        </div>
-        <!-- <div class="featured__img-wrapper">
-            <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="dummy.png" alt="">
+        </div> -->
+      <!-- test -->
+      <div class="featured__img-container">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="featured__img-wrapper swiper-slide">
+              <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="teach_assistant_home.png" alt="">
+            </div>
+            <div class="featured__img-wrapper swiper-slide">
+              <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="teach_assistant_collection.png"
+                alt="">
+            </div>
+            <div class="featured__img-wrapper swiper-slide">
+              <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="teach_assistant_test_home.png"
+                alt="">
+            </div>
+            <div class="featured__img-wrapper swiper-slide">
+              <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="teach_assistant_test_questions.png"
+                alt="">
+            </div>
+            <div class="featured__img-wrapper swiper-slide">
+              <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="teach_assistant_test_results.png"
+                alt="">
+            </div>
+            <div class="featured__img-wrapper swiper-slide">
+              <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="teach_assistant_chat.png" alt="">
+            </div>
           </div>
-          <div class="featured__img-wrapper">
-            <img class="lazy loading" src="https://fakeimg.pl/1920x1080" data-src="dummy.png" alt="">
-          </div> -->
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </section>
     <section class="work container section">
@@ -293,6 +326,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"
     integrity="sha512-AcqPGqrrAEtEwe+ADO5R8RbdFi7tuU7b/A2cJJH0Im0D18NRk5p5s4B3E5PMuO81KFw0ClN7J5SHVUJz7KOb0A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="/src/main.js"></script>
 </body>
 

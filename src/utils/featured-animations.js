@@ -50,6 +50,7 @@ function featuredAnimations() {
         }
     })
 
+
 }
 
 export default featuredAnimations;
